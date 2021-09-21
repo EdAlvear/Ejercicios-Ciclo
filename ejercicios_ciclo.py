@@ -131,3 +131,30 @@ def punto7(num_productos):
 
         total += precio * cantidad
     return total
+
+
+def punto8(num_entradas, valor):
+    edad1 = edad2 = edad3 = edad4 = edad5 = 0
+    for i in range(num_entradas):
+
+        edad = int(input('Ingrese su edad: '))
+        if edad < 5:
+            print('No puede ingresar')
+        if edad >= 5 and edad <= 14:
+            edad1 += valor * 0.35
+        if edad >= 15 and edad <= 19:
+            edad2 += valor * 0.25
+        if edad >= 20 and edad <= 45:
+            edad3 += valor * 0.1 
+        if edad >= 46 and edad <= 65:
+            edad4 += valor * 0.25
+        if edad > 65:
+            edad5 += valor * 0.35
+
+    return {
+        "Categoria 1": edad1,
+        "Categoria 2": edad2,
+        "Categoria 3": edad3,
+        "Categoria 4": edad4,
+        "Categoria 5": edad5,
+        }
