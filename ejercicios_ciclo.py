@@ -99,3 +99,10 @@ def punto4(edad_hombres, edad_mujeres):
         "Promedio mujeres": acumulador_mujeres / len(edad_mujeres),
         "Promedio general": total / (len(edad_hombres) + len(edad_mujeres))
     }
+
+def punto5(numbers):
+    menor = numbers[len(numbers) - 1]
+    for n in numbers:
+        if n < menor:
+            menor = n
+    return menor
