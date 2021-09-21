@@ -77,3 +77,10 @@ def punto2(animal):
         "Entre 1 y 3 años": c2,
         "Mayor o igual a 3 años": c3
     }
+
+def punto3(horas_obrero):
+    for obrero in horas_obrero:
+        if obrero <= 40:
+            print(f'Pago: {obrero * 20}')
+        elif obrero > 40:
+            print(f'Pago: {40 * 20 + ((obrero - 40) * 25)} ')
