@@ -158,3 +158,25 @@ def punto8(num_entradas, valor):
         "Categoria 4": edad4,
         "Categoria 5": edad5,
         }
+
+def punto9():
+    for i in range(1):
+        vendido = int(input(f'{i} Valor vendido: '))
+
+        if vendido <= 20000000:
+            print(f'Total vendido: {vendido}')
+            print(f'Comision: {vendido * 0.1}')
+        elif vendido > 20000000 and vendido < 40000000:
+            print(f'Total vendido: {vendido}')
+            print(f'Comision: {vendido * 0.15}')
+        elif vendido >= 40000000 and vendido < 80000000:
+            print(f'Total vendido: {vendido}')
+            print(f'Comision: {vendido * 0.2}')
+        elif vendido >= 80000000 and vendido < 160000000:
+            print(f'Total vendido: {vendido}')
+            print(f'Comision: {vendido * 0.25}')
+        elif vendido > 160000000:
+            print(f'Total vendido: {vendido}')
+            print(f'Comision: {vendido * 0.3}')
+            
+            
