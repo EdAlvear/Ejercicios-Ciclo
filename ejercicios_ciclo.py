@@ -84,3 +84,18 @@ def punto3(horas_obrero):
             print(f'Pago: {obrero * 20}')
         elif obrero > 40:
             print(f'Pago: {40 * 20 + ((obrero - 40) * 25)} ')
+
+def punto4(edad_hombres, edad_mujeres):
+    acumulador_hombres = acumulador_mujeres = total = 0
+    for edad in edad_hombres:
+        acumulador_hombres += edad
+        total += edad
+    for edad in edad_mujeres:
+        acumulador_mujeres += edad
+        total += edad
+    
+    return {
+        "Promedio hombres": acumulador_hombres / len(edad_hombres),
+        "Promedio mujeres": acumulador_mujeres / len(edad_mujeres),
+        "Promedio general": total / (len(edad_hombres) + len(edad_mujeres))
+    }
