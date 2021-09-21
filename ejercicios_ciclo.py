@@ -179,4 +179,23 @@ def punto9():
             print(f'Total vendido: {vendido}')
             print(f'Comision: {vendido * 0.3}')
             
-            
+def punto10():
+    votos1 = votos2 = votos3 = 0
+    for i in range(5):
+        voto = int(input('Ingrese el numero de los participante (1, 2, 3): '))
+
+        if voto == 1:
+            votos1 += 1
+        if voto == 2:
+            votos2 += 1
+        if voto == 3:
+            votos3 += 1
+        
+    if votos1 > votos2 and votos1 > votos3:
+        return f'Participante 1 ganó... # de votos: {votos1}'
+    elif votos3 > votos1 and votos3 > votos2:
+        return f'Participante 3 ganó... # de votos: {votos3}'
+    elif votos2 > votos1 and votos2 > votos3:
+        return f'Participante 2 ganó... # de votos: {votos2}'
+    elif votos1 == votos2 or votos1 == votos3 or votos2 == votos3:
+        return f'Empate... total de votos: 50000'
