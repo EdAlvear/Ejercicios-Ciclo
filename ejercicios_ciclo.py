@@ -29,3 +29,5 @@ def punto1(carros):
         "Autos verdes": c_verde,
         "Autos azules": c_azul
     }
+
+
