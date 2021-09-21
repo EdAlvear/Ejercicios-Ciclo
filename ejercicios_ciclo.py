@@ -120,3 +120,14 @@ def punto6():
             print(f'SUBIÓ {prom_pesos - ultimo_peso}')
         else:
             print(f'BAJÓ {ultimo_peso - prom_pesos}')
+
+
+def punto7(num_productos):
+
+    total = 0
+    for _ in range(num_productos):
+        precio = int(input('Ingrese el precio del producto: '))
+        cantidad = int(input('Cantidad del producto: '))
+
+        total += precio * cantidad
+    return total
