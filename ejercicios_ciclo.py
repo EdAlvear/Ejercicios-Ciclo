@@ -106,3 +106,17 @@ def punto5(numbers):
         if n < menor:
             menor = n
     return menor
+
+def punto6():
+    for i in range(5):
+        ultimo_peso = int(input('Ingrese su ultimo peso:'))
+        prom_pesos = 0
+        for i in range(10):
+            prom_pesos += int(input(f'Ingrese el peso de la bascula {i}:'))
+
+        prom_pesos = prom_pesos / 10
+
+        if prom_pesos > ultimo_peso:
+            print(f'SUBIÓ {prom_pesos - ultimo_peso}')
+        else:
+            print(f'BAJÓ {ultimo_peso - prom_pesos}')
